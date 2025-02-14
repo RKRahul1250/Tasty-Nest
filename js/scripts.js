@@ -1,11 +1,3 @@
-/*!
-* Start Bootstrap - Creative v7.0.7 (https://startbootstrap.com/theme/creative)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -63,7 +55,7 @@ window.addEventListener('DOMContentLoaded', event => {
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent default form submission
 
-    let emailInput = document.getElementById("email").value.trim(); // Fix ID
+    let emailInput = document.getElementById("email").value.trim(); 
     let successMessage = document.getElementById("submitSuccessMessage");
     let errorMessage = document.getElementById("submitErrorMessage");
 
@@ -71,10 +63,10 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (emailPattern.test(emailInput)) {
-        successMessage.classList.remove("d-none"); // Show success message
-        errorMessage.classList.add("d-none"); // Hide error message
+        successMessage.classList.remove("d-none"); 
+        errorMessage.classList.add("d-none"); 
     } else {
-        errorMessage.classList.remove("d-none"); // Show error message
-        successMessage.classList.add("d-none"); // Hide success message
+        errorMessage.classList.remove("d-none"); 
+        successMessage.classList.add("d-none"); 
     }
 });
